@@ -105,3 +105,30 @@ https://en.wikipedia.org/wiki/Chmod
 
 
 https://www.gitpod.io/docs/configure/workspaces/tasks
+
+
+
+### AWS CLI Installation
+
+AWS CLI is installed for the project via the bash script. [`./bin/install_aws_cli`](./bin/install_aws_cli)
+
+[Getting Started Install (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+[AWS CLI Env Vars](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html)
+
+We can check if our AWS credentials is configured correctly by running the following AWS CLI command:
+```sh
+aws sts get-caller-identity
+```
+
+If it is successful you should see a json payload return that looks like this:
+
+```json
+{
+    "UserId": "AIDBAAMPLEUSERID",
+    "Account": "123456789012",
+    "Arn": "arn:aws:iam::123456789012:user/TerraformAdmin"
+}
+```
+
+We'll need to generate AWS CLI creditentials from IAM User in order to use the AWS CLI.
