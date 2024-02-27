@@ -3,6 +3,7 @@ tasks:
     before: |
         source ./bin/install_terraform_cli
         source ./bin/set_tf_alias
+        source ./bin_generate_tfrc_credentials
   
   - name: aws-cli
     env:
