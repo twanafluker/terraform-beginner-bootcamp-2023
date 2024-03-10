@@ -1,13 +1,16 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semantic Versioning :mage:
+## Table of Contents
 
-Given a version number **MAJOR.MINOR.PATCH**, increment the:
+- [Semantic Verisioning](#semantic-versioning)
+- [Install the Terraform CLI](#install-the-terraform-cli)
+  -[Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
+  
+
+## Semantic Versioning 
 
 This project is going to utilize semantic versioning for its tagging.
-
 [semver.org](https://semver.org/)
-
 
 The general format:
 
