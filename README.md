@@ -4,7 +4,7 @@
 
 - [Semantic Verisioning](#semantic-versioning)
 - [Install the Terraform CLI](#install-the-terraform-cli)
-  -[Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
+  - [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
   
 
 ## Semantic Versioning 
