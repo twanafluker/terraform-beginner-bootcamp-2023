@@ -5,7 +5,7 @@
     + [Considerations with the Terraform CLI changes](#considerations-with-the-terraform-cli-changes)
     + [Considerations for Linux Distrubution](#considerations-for-linux-distrubution)
     + [Refactoring into Bash Scripts](#refactoring-into-bash-scripts)
-    + [Shebang Considerations](#shebang-considerations)
+      - [Shebang Considerations](#shebang-considerations)
       - [Execution Considerations](#execution-considerations)
       - [Linux Permissions Considerations](#linux-permissions-considerations)
     + [Github Lifecycle (Before, Init, Command)](#github-lifecycle--before--init--command-)
@@ -87,7 +87,7 @@ This bash script is located here: [./bin/install_terraform_cli](./bin/install_te
 -This allow us an easier to debug and execute manually Terraform CLI install
 -This will allow better portablity for other projects that need to install Terraform CLI.
 
-### Shebang Considerations
+#### Shebang Considerations
 
 A Shebang (pronounced Sha-bang) tells the bash script what program will interpet the script. eg. `#!/bin/bash`
 
@@ -121,8 +121,7 @@ alternatively:
 chmod 744 ./bin/install_terraform_cli
 ```
 
-https://en.wikipedia.org/wiki/Chmod
-
+[https://en.wikipedia.org/wiki/Chmod](https://en.wikipedia.org/wiki/Chmod)
 
 
 ### Github Lifecycle (Before, Init, Command)
@@ -157,18 +156,24 @@ If it is successful you should see a json payload return that looks like this:
     "Arn": "arn:aws:iam::123456789012:user/TerraformAdmin"
 }
 ```
-
 We'll need to generate AWS CLI creditentials from IAM User in order to use the AWS CLI.
-=======
-### Working With Env Vars (Environment Variables)
 
-#### env command
+
+## Gitpod Lifecycle
+
+We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
+
+https://www.gitpod.io/docs/configure/workspaces/tasks
+
+## Working With Env Vars
+
+### env command
 
 We can list out all Ennvironment Variables  (Env Vars) using the `env` command
 
 We can filter specific env vars using grep eg. `env | grep AWS_`
 
-#### Setting and Unsetting Env Vars
+### Setting and Unsetting Env Vars
 
 In the terminal we can set using `export HELLO= 'world`
 
