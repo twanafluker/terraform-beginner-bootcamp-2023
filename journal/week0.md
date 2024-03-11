@@ -123,7 +123,7 @@ chmod 744 ./bin/install_terraform_cli
 [https://en.wikipedia.org/wiki/Chmod](https://en.wikipedia.org/wiki/Chmod)
 
 
-### Github Lifecycle (Before, Init, Command)
+### Github Lifecycle Before, Init, Command
 
  We need to be careful when using Init because it will not rerun if we restart an existing workspace.
 
