@@ -123,19 +123,7 @@ chmod 744 ./bin/install_terraform_cli
 [https://en.wikipedia.org/wiki/Chmod](https://en.wikipedia.org/wiki/Chmod)
 
 
-## Gitpod Lifecycle
-
- We need to be careful when using Init because it will not rerun if we restart an existing workspace.
-
-
-https://www.gitpod.io/docs/configure/workspaces/tasks
-
-
-
-7-refactor-aws-cli-script
-
-
-## Gitpod Lifecycle
+# Gitpod Lifecycle
 
 We need to be careful when using the Init because it will not rerun if we restart an existing workspace.
 
