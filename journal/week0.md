@@ -16,7 +16,7 @@
       - [Setting and Unsetting Env Vars](#setting-and-unsetting-env-vars)
       - [Printing Vars](#printing-vars)
     + [Scoping on Env Vars](#scoping-on-env-vars)
-      - [Persisting Env Vars in Gitpos](#persisting-env-vars-in-gitpos)
+      - [Persisting Env Vars in Gitpod](#persisting-env-vars-in-gitpod)
   * [Terraform Basics](#terraform-basics)
     + [Terraform Registry](#terraform-registry)
     + [Terraform Console](#terraform-console)
@@ -182,7 +182,7 @@ When you open up new bash terinals in VSCode it will not be aware of env vars th
 
 If you want Env Vars to persist across all future bash terminals that are open you need to set env vars in your bash profile. eg. `.bash_profile`
 
-#### Persisting Env Vars in Gitpos
+#### Persisting Env Vars in Gitpod
 
 We can persist env vars into gitpod by storing them in Gitpod Secrets Storage.
 
